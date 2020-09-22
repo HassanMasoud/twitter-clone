@@ -13,6 +13,7 @@ import {
   faEllipsisH,
 } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Feed from "./components/Feed/Feed";
 
 library.add(
   fab,
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
+      <Feed />
     </div>
   );
 }
