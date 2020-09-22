@@ -1,12 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./SidebarOption.css";
 
-function SidebarOption({ icon, text }) {
+function SidebarOption({ active, icon, text }) {
   return (
-    <div className="sidebarOption">
-      <h2>
-        <FontAwesomeIcon icon={icon} /> {text}
-      </h2>
+    <div className={`sidebarOption ${active && "sidebarOption--active"}`}>
+      <div className="sidebarIcon">
+        <FontAwesomeIcon icon={icon} />
+      </div>
+      <h2>{text}</h2>
     </div>
   );
 }
