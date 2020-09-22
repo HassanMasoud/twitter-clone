@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Feed from "./components/Feed/Feed";
+import Widgets from "./components/Widgets/Widgets";
 
 library.add(
   fab,
@@ -32,6 +33,7 @@ function App() {
     <div className="app">
       <Sidebar />
       <Feed />
+      <Widgets />
     </div>
   );
 }
