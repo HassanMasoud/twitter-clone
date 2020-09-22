@@ -11,6 +11,11 @@ import {
   faListAlt,
   faUser,
   faEllipsisH,
+  faCheckCircle,
+  faComment,
+  faRetweet,
+  faHeart,
+  faShareSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Feed from "./components/Feed/Feed";
@@ -25,7 +30,12 @@ library.add(
   faBookmark,
   faListAlt,
   faUser,
-  faEllipsisH
+  faEllipsisH,
+  faCheckCircle,
+  faComment,
+  faRetweet,
+  faHeart,
+  faShareSquare
 );
 
 function App() {
