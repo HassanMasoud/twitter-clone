@@ -7,28 +7,29 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://pbs.twimg.com/profile_images/448098642914594816/5QxXRobP_reasonably_small.jpeg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Hassan Masoud{" "}
+              {displayName}{" "}
               <span className="post__headerSpecial">
-                <FontAwesomeIcon className="post__badge" icon="check-circle" />{" "}
-                @hassanmasoud
+                {verified && (
+                  <FontAwesomeIcon
+                    className="post__badge"
+                    icon="check-circle"
+                  />
+                )}{" "}
+                @{username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>I just built a Twitter clone with React</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif"
-          alt=""
-          srcset=""
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <FontAwesomeIcon icon="comment" />
           <FontAwesomeIcon icon="retweet" />
