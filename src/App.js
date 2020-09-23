@@ -16,6 +16,7 @@ import {
   faRetweet,
   faHeart,
   faShareSquare,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Feed from "./components/Feed/Feed";
@@ -35,7 +36,8 @@ library.add(
   faComment,
   faRetweet,
   faHeart,
-  faShareSquare
+  faShareSquare,
+  faSearch
 );
 
 function App() {
